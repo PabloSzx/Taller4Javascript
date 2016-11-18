@@ -1,0 +1,44 @@
+<html>
+<head>
+      <meta name="Author" content="Gladys Mansilla Gomez">
+      <title>  CAJA CON MENSAJE </title>
+</head>
+<BODY>
+<SCRIPT LANGUAGE="JavaScript">
+
+var atributos = 'toolbar=no,location=no,directories=no,'; 
+    atributos+='status=no,menubar=no,scrollbars=no,';
+    atributos += 'resizable=yes,copyhistory=no,width=300,';
+    atributos += 'height=150';
+
+function fnOpcion(op) {
+if (op == 1) {
+       ventana = window.open('','',atributos)
+
+       var doc = "<html><title>VENTANA DEL MENSAJE</title><br>"
+           doc += "<br><center><h3>" + self.document.frm.texto.value
+           doc += "</h3><br><form><input type=button value=Cerrar"
+           doc += " onclick=self.close()></center></html>"
+
+      ventana.document.write(doc)
+       ventana.document.close()
+       }
+if (op == 2) {
+     self.close();
+      }
+}
+</SCRIPT>
+<br><br><br>
+
+<form name="frm">
+
+<center>Mensaje: <input type=text name="texto" size=30>
+
+<br><br><br><br>
+<input type=button value="Crear ventana" onclick="fnOpcion(1)">
+<input type=button value="Cerrar el browser" onclick="fnOpcion(2)">
+</center>
+</form>
+
+</body>
+</html>

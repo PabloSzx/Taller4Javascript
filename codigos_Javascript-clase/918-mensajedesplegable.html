@@ -1,0 +1,82 @@
+<html>
+<head>
+      <title> MENU PARA MENSAJES </title>
+</head>
+<BODY>
+<table border="0" cellspacing="0" cellpadding="0">
+
+  <tr>
+
+    <td width="100%"><form name="mensdesp"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+
+        <tr>
+
+          <td width="100%"><select name="caja" size="1" onChange="cambia(this)">
+
+            <option selected value="Que es Javascript?">Que es JavaScript?</option>
+
+            <option value="Porque aprender JavaScript?">Porque aprender JavaScript?</option>
+
+            <option value="Cual es la diferencia entre JavaScript and Java">La diferencia entre Java and JavaScript</option>
+
+            <option value="Que es DHTML?">Que es DHTML?</option>
+
+          </select><br>
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td width="100%"><textarea rows="4" name="contenido" cols="45" wrap="virtual"></textarea><br>
+
+</td>
+
+        </tr>
+
+      </table>
+
+    </form>
+
+    </td>
+
+  </tr>
+
+</table>
+
+<p>
+
+<script language="JavaScript">
+
+/*
+
+Mensajes en un menu desplegable
+*/
+
+
+//puede cambiar los mensajes a su gusto
+
+var mensajes=new Array()
+
+mensajes[0]='JavaScript es un lenguaje de scripting desarrollado por Netscape para incorporar interactividad a lo que se puede hacer con HTML. JavaScript es relativamente facil de aprender,aun para personas que no son programadores.'
+
+mensajes[1]=' Porque es fácil de programar, lo que se consigue es realmente bueno ,podemos crear cuestionarios, verificadores,etc.'
+
+mensajes[2]='Java is completamente diferente de JavaScript. Java es mas completo y complejo de usar ademas el código requiere ser compilado antes de usarlo , en cambio Javascript solo se escribe en un editor y al abrir el browser y llamarlo comienza a ejecutarse. '
+
+mensajes[3]='DHTML, o Dynamic HTML, es una nueva tecnologia que permite incluir elementos que cambien en la pagina web, y esto permite que textos,imagenes colores ,etc, se actualicen en linea.'
+
+//mas abajo esta la funcion que realiza el cambio de mensaje
+
+function cambia(cual){
+
+document.mensdesp.contenido.value=mensajes[cual.selectedIndex]
+
+}
+
+document.mensdesp.contenido.value=mensajes[document.mensdesp.caja.selectedIndex]
+
+</script>
+</body>
+</html>

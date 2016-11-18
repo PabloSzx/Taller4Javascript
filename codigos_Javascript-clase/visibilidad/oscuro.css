@@ -1,0 +1,86 @@
+*, body {
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: medium;
+        }
+
+h1, h2, h3, h4, h5, h6 {
+	               font-family: "Times New Roman", Times, serif;
+                       }
+
+h1 {
+	font-size: 200%;
+   }
+h2 {
+	font-size: 175%;
+   }
+h3 {
+	font-size: 150%;
+   }
+
+body {
+	border: solid 8px #000000;
+	color: #FFFF00;
+	background-color: #000000 !important;
+	margin: 0px;
+	padding: 0px;
+        }
+
+a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+        }
+a:visited {
+	text-decoration: none;
+	color: #00EE00;
+}
+a:hover  {
+	text-decoration: underline;
+	color: #FFCCCC;
+}
+a:active {
+	text-decoration: none;
+	color: #CCCCCC;
+         }
+
+div#principal {
+	margin-right: 20%;
+	top: 0px;
+	left: 0px;
+	padding: 4%;
+}
+
+div#princ2 {
+         padding: 4%;
+            }
+
+div#estilos {
+	font-size: 85%;
+	position: absolute;
+	left: 55%;
+	top: 0px;
+	padding: 2px;
+	border-bottom: 1px solid #0000FF;
+}
+
+div#menu {
+	position: absolute;
+	left: 65%;
+	top: 4em;
+	background-image: url(barra_az_neg.gif) !important;
+	background-repeat: no-repeat;
+	padding-top: 1em;
+}
+
+div#menu ul li {
+	list-style-image: url(fle_azul.gif);
+	padding-bottom: 0.5em;
+}
+
+div#pie {
+	border-top: 1px solid #0000FF;
+	margin-left: 10%;
+	width: 90%;
+	padding-top: 0.5em;
+	text-align: center;
+	font-size: 85%;
+}

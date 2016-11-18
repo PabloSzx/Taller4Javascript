@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Entrada de teclado</title>
+<script language="JavaScript">
+<!--
+function init(){
+window.focus()
+if (navigator.appName=="Netscape"){
+document.onkeydown = mensaje
+}
+else{
+document.body.onkeydown = mensaje
+}
+}
+function mensaje(tecla){
+if (navigator.appName=="Netscape"){
+alert(String.fromCharCode(tecla.which))
+}
+else{
+alert(String.fromCharCode(event.keyCode))
+}
+}
+//-->
+</script>
+</head>
+<body onLoad="init()">
+Pulse una tecla
+</body>
+</html>

@@ -1,0 +1,72 @@
+Clase 24 sept 2009
+
+Lo que falta de css
+Botones con estilo
+boton1.html
+boton2.html (cursor y target)
+boton_estilo.html ( clase)
+Peliculas.html  (clases estilos de fuente)
+viñetas (viñeta:imagen dentro fuera)
+primera_letra.html (estilo en primera letra seudoclase)
+ejemplocapas (ejemplo de capas y parrafos)
+visibilidad1 (uso de css y javascript)
+________________
+Javascript
+hola.html (primer ejemplo de script)
+prueba.html   (archivo externo)
+especiales.html (uso de caracteres especiales   \n   \t  etc)
+cabecera.html (variables globales)
+imprimir.html (uso de funcion print())
+eventos2.html   (onclick onmouseover)
+reloj.html (reuso de un archivo.js)
+navegador.html (detecta navegador y version)
+factorial.html (uso de document.write y for)
+                   ver fibonacci.html y probar tabla de cuadrados
+case_jss.html (uso de if , ver switch)
+ver juegovida.pdf y gato.pdf (javscript en pdf)
+arreglo.html  (uso de arreglos y metodos)  
+ej_mensaje_responde.html  (uso de objetos)(crear una calculadora que sume reste mult y div)
+ej_test1.html (ejemplo de prueba)   (ver ej_test.html, llama .js)
+verfotos.html (uso de arreglo de imagenes)
+ej_mensaje.html  (abrir ventana con atributos, crear doc html)
+calculadora.html   (uso de parseint o parsefloat)
+
+_________________
+Clase 28092009
+imprimir.html (uso de funcion print()) (utilidad uso marcos en Firefox)
+case_jss.html (uso de if , ver switch)
+ver juegovida.pdf y gato.pdf (javscript en pdf)
+arreglo.html  (objeto Array(), uso de arreglos y metodos)  
+ej_mensaje_responde.html  (uso de objetos)(crear una calculadora que sume reste mult y div)
+ej_test1.html (ejemplo de prueba)   (ver ej_test.html, llama .js)
+verfotos.html (uso de arreglo de imagenes)
+ej_mensaje.html  (abrir ventana con atributos, crear doc html)
+__________________
+1/10/09 Ejercicios:
+1)Ver case_jss.html , investigar en Internet uso de switch
+       hacer lo mismo con switch (case)
+2)Ver ej_mensaje_responde.html 
+       usarlo como base para crear una calculadora que multiplique, divida, sume y reste dos números.
+
+ calculadora.html   (para la suma use parseint o parsefloat)
+3) Ver ej_test1.html, cambiar la entrada de respuestas a input tipo texto
+_________________________________
+fechas.html  (objeto Date()  )
+cookies01.html  (creacion de una cookie con fecha de expiración )
+cookies02.html (lee una cookie y aumenta contador de visitas)
+navegador.html (detecta el navegador para mozilla firefox dice Netscape)
+delfin.html (hoja dinamica uso de DOM imagen en movimiento)
+sonido01 02 y 03, presenta sonido, diferencia entre navegadores
+teclado, detecta pulsación de una tecla, diferencia entre navegadores
+teclado01.html entrega el código, teclado entrega la letra
+tecladocambia.html  detecta pusacion de tecla y cambia presentación.(uso objeto.src)
+
+
+
+
+
+
+
+
+
+

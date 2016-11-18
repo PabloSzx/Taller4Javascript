@@ -1,0 +1,117 @@
+*, body {
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: medium;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 175%;
+}
+h3 {
+	font-size: 150%;
+}
+
+body {
+	border: solid 8px #000000;
+	color: #000000;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+
+body.naranja {
+	background-color: #FFEECC;
+}
+body.verde {
+	background-color: #CCFFEE;
+}
+body.celeste {
+	background-color: #DDFFFF;
+}
+body.violeta {
+	background-color: #FFEEFF;
+}
+body.amarillo {
+	background-color: #FFFFCC;
+}
+body.gris {
+	background-color: #EEEEEE;
+}
+body.azul {
+	background-color: #EEEEFF;
+}
+
+
+a:link {
+	text-decoration: none;
+	color: #0000FF;
+}
+a:visited {
+	text-decoration: none;
+	color: #009900;
+}
+a:hover  {
+	text-decoration: underline;
+	color: #FF0000;
+}
+a:active {
+	text-decoration: none;
+	color: #990000;
+}
+
+div#principal {
+	margin-right: 40%;
+	top: 0px;
+	left: 0px;
+	padding: 4%;
+}
+
+div#princ2 {
+         padding: 4%;
+}
+
+div#estilos {
+	font-size: 85%;
+	position: absolute;
+	left: 55%;
+	top: 0px;
+	padding: 2px;
+	border-bottom: 1px solid #0000FF;
+}
+
+div#menu {
+	position: absolute;
+	left: 65%;
+	top: 4em;
+	background-image: url(barra_az_bl.gif);
+	background-repeat: no-repeat;
+	padding-top: 1em;
+}
+
+body.naranja div#menu {
+	background-image: url(graf/barra_az_nar.gif);
+}
+
+body.verde div#menu {
+	background-image: url(graf/barra_az_ver.gif);
+}
+
+div#menu ul li {
+	list-style-image: url(fle_azul.gif);
+	padding-bottom: 0.5em;
+}
+
+div#pie {
+	border-top: 1px solid #0000FF;
+	margin-left: 10%;
+	width: 90%;
+	padding-top: 0.5em;
+	text-align: center;
+	font-size: 85%;
+}

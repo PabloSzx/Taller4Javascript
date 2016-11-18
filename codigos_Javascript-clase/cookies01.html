@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Crea cookie</title>
+<script language="JavaScript">
+<!--
+var contador=1
+var fechacad=new Date()
+fechacad=new Date(fechacad.getTime()+1000*60*60*24*365)
+document.cookie = "Contador="+contador+"; expires="+fechacad.toGMTString()+";"
+alert("Esta es tu visita número " + contador + " a esta página.")
+//-->
+</script>
+</head>
+<body>
+Crea cookie con fecha de expiracion.
+</body>
+</html>

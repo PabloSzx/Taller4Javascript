@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Contador de visitas</title>
+<script language="JavaScript">
+<!--
+var contador=1
+if (document.cookie){
+var strContador=document.cookie.substring(document.cookie.indexOf("=")+1, document.cookie.length)
+contador=parseInt(strContador)+1
+}
+var fechacad=new Date()
+fechacad=new Date(fechacad.getTime()+1000*60*60*24*365)
+document.cookie = "Contador="+contador+"; expires="+fechacad.toGMTString()+";"
+alert("Esta es tu visita número " + contador + " a esta página.")
+//-->
+</script>
+</head>
+<body>
+Lee cookie.
+</body>
+</html>

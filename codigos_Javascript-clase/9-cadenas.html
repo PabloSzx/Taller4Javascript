@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+
+s = "Hola," + " todo el mundo" // Produce el string "Hola, todo el mundo" 
+  
+saludo = s + "!!!" // Produce el string "Hola, todo el mundo!!!" 
+saludo.length // cantidad de caracteres 
+  
+car = s.charAt(s.length - 1) // car = "o" último caracter
+  
+sub = saludo.substring(1,4) // sub = "ola" 
+  
+
+i = saludo.indexOf("o") // posicion del caracter o partiendo de cero
+document.write("<h3>mensaje almacenado </h3>")
+document.write(s+"<br>")
+document.write("<h3> exclamativo </h3>")
+document.write(saludo+"<br>")
+document.write("<h3> Cantidad de caracteres </h3>")
+document.write(saludo.length+"<br>")
+document.write("<h3> caracter numero 21 </h3>")
+document.write(car+"<br>")
+document.write("<h3> caracteres del 1 al 4 </h3>")
+
+document.write(sub+"<br>")
+document.write("<h3> posicion de la primera letra o en mensaje original contando desde cero </h3>")
+document.write(i)
+
+
+
+</script>
+</body>
+</html>

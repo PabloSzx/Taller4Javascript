@@ -1,0 +1,61 @@
+
+<html>
+<head>
+<SCRIPT LANGUAgE="JavaScript" >
+var resp1 = "0";
+var resp2 = "0";
+var resp3 = "0";
+
+
+function evaluar()
+{
+puntuacion=0;
+
+resp1=self.document.test.preg1.value ;
+
+resp2=self.document.test.preg2.value;
+
+resp3=self.document.test.preg3.value;
+
+
+
+  if(resp1 == "A" || resp1 == "a" ) {puntuacion=puntuacion+1};
+
+  if(resp2 == "B" || resp2 == "b" ) {puntuacion=puntuacion+1};
+
+  if(resp3 == "B" || resp3 == "b" ) {puntuacion=puntuacion+1};
+
+
+alert("Su puntuación es "+puntuacion)
+
+}
+
+
+</SCRIPT>
+
+</head>
+<BODY>
+
+<br><br><br>
+<form name="test">
+
+1.- Que es????  <BR>
+A ...<BR>
+B ...<BR>
+C ...<BR>
+Respuesta: <input type=text size=1 name=preg1><br>
+2.- Que es.....<BR>
+A ...<BR>
+B ...<BR>
+C ...<BR>
+Respuesta: <input type=text size=1 name=preg2><br>
+3.-Que es esto...<BR>
+A ...<BR>
+B ...<BR>
+C ...<BR>
+Respuesta: <input type=text size=1 name=preg3><br>
+<input type="submit" name="algo" value="envie respuestas" onclick="evaluar()"> <br><br>
+<input type="button" name="solucion" value="Respuestas correctas" onclick="alert('RESPUESTAS CORRECTAS\n\n1:A   2:B  3:B')">
+</form>
+</body>
+</html>

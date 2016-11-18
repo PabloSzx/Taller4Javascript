@@ -1,0 +1,57 @@
+<html>
+<head>
+      
+      <title>  Calculadora </title>
+</head>
+<BODY>
+<SCRIPT LANGUAGE="JavaScript">
+
+
+
+function fnOpcion(op) {
+if (op == 1) {
+       self.document.frm.texto3.value=self.document.frm.texto.value*self.document.frm.texto2.value
+           
+ 
+       }
+if (op == 2) {
+       self.document.frm.texto3.value=self.document.frm.texto.value/self.document.frm.texto2.value
+           
+ 
+       }
+if (op == 3) {
+       self.document.frm.texto3.value= parseFloat(self.document.frm.texto.value)+ parseFloat(self.document.frm.texto2.value)
+           
+            }
+       
+if (op==4) {
+       self.document.frm.texto3.value=self.document.frm.texto.value-self.document.frm.texto2.value
+           
+ 
+       }
+
+if (op == 5) {
+     self.close();
+      }
+}
+</SCRIPT>
+<br><br><br>
+
+<form name="frm">
+
+<center>A: <input type=text name="texto" size=10>
+        B: <input type=text name="texto2" size=10>
+        Resp: <input type=text name="texto3" size=10>
+
+<br><br><br><br>
+<input type=button value="*" onclick="fnOpcion(1)"><br>
+<input type=button value="/" onclick="fnOpcion(2)"><br>
+<input type=button value="+" onclick="fnOpcion(3)"><br>
+<input type=button value="-" onclick="fnOpcion(4)"><br>
+
+<input type=button value="Cerrar el browser" onclick="fnOpcion(5)">
+</center>
+</form>
+
+</body>
+</html>
