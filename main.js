@@ -18,7 +18,3 @@ function setHtml(clase, argument) {
 function setImage(clase, argument) {
 	document.getElementById(clase).src = argument;
 }
-
-function function_name(argument) {
-	// body...
-}
