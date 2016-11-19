@@ -1,13 +1,14 @@
 function addClass(clase, argument) {
 	//En esta clase se le ingresa el nombre de la clase que se va a modificar y
-	//en el argument va el nombre de la case del style que se incrustara al final
-	//del archivo
-	//SI SE VA A REEMPLAZAR UN ATRIBUTO YA ESTABLECIDO, FAVOR QUE AGREGAR "!important"
-	//A LOS ATRIBUTOS DEL STYLE A REEMPLAZAR
-	document.getElementById(clase).className += argument;
+	//en el argument va el nombre de la clase del style que se incrustara al final
+	//del elemento
+	document.getElementById(clase).className += (' '+argument);
 }
 
 function setClass(clase, argument) {
+	//En esta clase se le ingresa el nombre de la clase que se va a modificar y
+	//en el argument va el nombre de la clase del style que se cambiara todas las 
+	//clases del elemento al argument dado
 	document.getElementById(clase).className = argument;
 }
 
@@ -18,3 +19,12 @@ function setHtml(clase, argument) {
 function setImage(clase, argument) {
 	document.getElementById(clase).src = argument;
 }
+
+function main() {
+	//Esta funcion se realizara al momento que la pagina completa haya cargado
+	console.log(testPokemon.length);
+}
+
+const testPokemon = ["Aboumasnow", "Arcanine", "Cottonee", "Crobat", "Delibird", "Gengar",
+											"Koffing", "Liepard",	"Mawile",	"Murkrow", "Raichu", "Sableye",
+											"Stoutland", "Weavile", "Wopper", "Zangoose"];
