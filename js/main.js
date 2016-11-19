@@ -17,5 +17,5 @@ function main() {
 	console.log(testPokemon.length);
 }
 function button() {
-	setHtml('text','<br>Esto es para probar');
+	setText('text','<br>Esto es para probar');
 }
