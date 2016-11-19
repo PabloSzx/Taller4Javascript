@@ -3,15 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
 	<title>¡¿Quien es ese Pokemon?!</title>
-	<script src='main.js'></script>
-	<link href='style.css' rel='stylesheet'>
-	<link rel="shortcut icon" type="image/x-icon" href="imgs/pokeball.png" />
+
+	<script src='js/main.js'></script>
+	<script src='js/info.js'></script>
+	<script src='js/functions.js'></script>
 	<script src="http://localhost:35729/livereload.js?snipver=1"></script>
+
+	<link href='css/style.css' rel='stylesheet'>
+	<link rel="shortcut icon" type="image/x-icon" href="imgs/icon/pokeball.png" />
 </head>
 <body onload="main()">
 	<div id="main" class="background-black">
-		<input type="button" onclick="setHtml('text','<br>Esto es para probar')" id="button" value="Presionar">
+		<input type="button" onclick="button()" id="button" value="Presionar">
 		<span id="text"></span>
 	</div>
 </body>
