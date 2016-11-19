@@ -24,3 +24,7 @@ function setText(clase, argument) {
 function setImage(clase, argument) {
 	document.getElementById(clase).src = argument;
 }
+
+function setValue(clase, argument) {
+	document.getElementById(clase).value = argument;
+}
