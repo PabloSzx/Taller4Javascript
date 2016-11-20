@@ -5,6 +5,11 @@ ATRIBUTOS ASOCIADOS A LA BASE DEL DOM HTML
 */
 body {
 	margin: 0;
+	font-family: Flexo;
+}
+@font-face {
+    font-family: Flexo;
+    src: url(/fonts/Flexo.ttf);
 }
 /*
 ID SETTINGS
@@ -12,6 +17,7 @@ ID SETTINGS
 ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 */
 #main {
+	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -30,11 +36,54 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	margin: auto;
 }
 #imgPokemon {
-	display: block;
-	margin: auto;
+	height: 100%;
 }
 #form {
 	
+}
+
+#header {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 30vh;
+	width: 100vw;
+	background-image: url("/imgs/container_bg.png");
+}
+
+#logo {
+	position: relative;
+	top: 5vh;
+	left: 5vw;
+	height: 20vh;
+}
+#body {
+	top: 30vh;
+	left: 0;
+	height: 70vh;
+	width: 100vw;
+	background-image: url("/imgs/body_bg.png");
+}
+#title {
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 10vh;
+	left: 10vw;
+	background-color: #324994;
+	width: 77vw;
+	height: 13vh;
+	vertical-align: middle;
+	color: white;
+	font-size: 8vh;
+}
+#alternatives {
+	position: relative;
+	top: 10vh;
+	left: 10vw;
+	background-color: #fbbf42;
+	width: 77vw;
+	height: 32vh;
 }
 /* 
 HELPER CLASSES

@@ -85,3 +85,21 @@ function hover() {
 function hoverout() {
 	setImage('imgPokemon',imgSrc+name+guess+png);
 }
+
+
+/*
+
+<div id="main" class="background-black">
+		<img id="imgPokemon" onmouseover="hover()" onmouseout="hoverout()">
+		<input type="button" onclick="button()" id="button" value="Siguiente imagen">
+		<form id="forms" method="post">
+		  <input type="radio" id="a" name="selection" value="opcion a"><span id="opt0">A</span><br>
+		  <input type="radio" id="b" name="selection" value="opcion b"><span id="opt1">B</span><br>
+		  <input type="radio" id="c" name="selection" value="opcion c"><span id="opt2">C</span><br>
+		  <input type="radio" id="d" name="selection" value="opcion d"><span id="opt3">D</span><br>
+		  <input type="radio" id="e" name="selection" value="opcion e"><span id="opt4">E</span><br>
+		</form>
+		<button type="submit" onclick="printScore()">Imprimir en consola resultados del test</button>
+	</div>
+
+	*/
