@@ -27,18 +27,14 @@ function button() {
 			setImage('imgPokemon',imgSrc+name+guess+png);
 			break;
 		}
-	}
-
-	elementos = document.getElementById('forms').elements;
-	
-	console.log(elementos[0].checked)
+	}	
 	let m;
 	mAlreadyPicked = [];
-	const correctAnswer = Math.round(Math.random()*5);
-	console.log(correctAnswer);
+	const correctAnswer = Math.round(Math.random()*4);
 	for (let i = 0; i < 5; i++) {
 		if (i === correctAnswer) {
 			setText(('opt'+i),name);
+			score[p][0]=i;
 		}
 		else {
 			while (true) {
@@ -51,12 +47,37 @@ function button() {
 			}
 		}
 	}
-	document.getElementById('forms').reset();	
-	p=p+1;
 	}
-}
-function checkAnswer(correct) {
+	updateScore();
+	if (p<16) {
+		p=p+1;
+	}
+	document.getElementById('forms').reset();
 	
+}
+function updateScore() {
+	for (let i = 0; i < 5; i++) {
+			if ((document.getElementById('forms').elements)[i].checked) {
+					score[p-1][1] = i;
+				}
+		}
+}
+function checkAnswer() {
+	if (p > 1) {
+		for (let i = 0; i < p-1; i++) {
+				if (score[i][0] === score[i][1]) {
+					finalScore[i] = 1;
+				}
+				else {
+					finalScore[i] = 0;
+				}
+			}
+		}
+	}
+
+function printScore() {
+	checkAnswer();
+	console.log(finalScore)
 }
 function hover() {
 	setImage('imgPokemon',imgSrc+name+png);

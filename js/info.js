@@ -11,7 +11,9 @@ const poolPokemon =
 "Machoke", "Machamp", "Geodude", "Graveler", "Golem", "Abra", "Kadabra", 
 "Alakazam"];
 
-let score = [];
+let score = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
+
+let finalScore = [];
 
 let nAlreadyPicked = [];
 
