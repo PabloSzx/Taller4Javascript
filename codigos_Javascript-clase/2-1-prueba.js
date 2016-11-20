@@ -1,1 +1,0 @@
-alert("soy un archivo externo")
