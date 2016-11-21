@@ -24,7 +24,6 @@ function button() {
 		if (nAlreadyPicked.indexOf(n) === -1) {
 			nAlreadyPicked[nAlreadyPicked.length]=n;
 			name = testPokemon[n];
-
 			setImage('imgPokemon',imgSrc+name+guess+png);
 			break;
 		}
@@ -57,7 +56,6 @@ function button() {
 		if (p===17) {
 			final();
 		}
-	
 }
 function updateScore() {
 	for (let i = 0; i < 5; i++) {
@@ -109,11 +107,11 @@ function final() {
 
 function showAnswer() {
 	setImage('pokeCorrect',imgSrc+name+png);
-	setClass('pokeCorrect','visible');
-	setTimeout(function(){ setClass('pokeCorrect','hidden'); }, 1500)
 	
+	setTimeout(function(){ setClass('pokeCorrect','visible');}, 300)
+	setTimeout(function(){ setClass('pokeCorrect','hidden');}, 1500)	
 	
-	setTimeout(function(){ button() }, 2000)
+	setTimeout(function(){ button(); setImage('pokeCorrect',''); }, 2000)
 }
 
 
