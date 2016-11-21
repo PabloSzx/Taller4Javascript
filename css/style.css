@@ -42,8 +42,9 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	top: 15%;
 	right: 5%;
 	height: 70%;
+	transition: opacity 0.25s;
 }
-#arrow:hover {
+#arrow:active {
 	opacity: 0.5;
 }
 #forms {
