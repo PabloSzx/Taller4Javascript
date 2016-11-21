@@ -102,7 +102,7 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	vertical-align: middle;
 	color: #2f2f2f;
 	font-size: 6vmin;
-	text-shadow: 1px 1px #2f2f2f;
+	text-shadow: 1px 1px #999999;
 }
 #alternatives {
 	position: relative;
@@ -112,6 +112,7 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	width: 77vw;
 	height: 32vh;
 	color: white;
+	text-shadow: 2px 2px #2f2f2f;
 }
 #finalScore {
 	text-align: center;
