@@ -107,6 +107,14 @@ function final() {
 	p++;
 }
 
+function showAnswer() {
+	setImage('pokeCorrect',imgSrc+name+png);
+	setClass('pokeCorrect','visible');
+	setTimeout(function(){ setClass('pokeCorrect','hidden'); }, 1500)
+	
+	
+	setTimeout(function(){ button() }, 2000)
+}
 
 
 

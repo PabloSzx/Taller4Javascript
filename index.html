@@ -20,17 +20,17 @@
 </head>
 <body onload="main()">
 	<div id="header">
-		<img src="/imgs/pokemonlogo.png" id="logo">
+		<img src="/imgs/pokemonlogo.png" id="logo" onClick="showAnswer()" />
 		<a href="./"><img src="/imgs/restart.png" id="restart"></a>
 	</div>
 	<div id="body">
-	
 		<div id="title">
-		<img id="imgPokemon" onmouseover="hover()" onmouseout="hoverout()">
+		<img id="imgPokemon">
 			<p id="question">¿Cuál es este pokémon?</p>
-		<img id="arrow" src='/imgs/arrow.png' onClick='button()'/>
+		<img id="arrow" src='/imgs/arrow.png' onClick='showAnswer()'/>
 		</div>
 		<div id="alternatives">
+		<img id="pokeCorrect">
 		<p id="finalScore"></p>
 		<form id="forms" method="post">
 		  <input type="radio" id="a" name="selection" value="opcion a"><span id="opt0" onclick="textChoose('0')">A</span><br>

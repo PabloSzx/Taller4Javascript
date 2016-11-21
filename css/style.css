@@ -80,7 +80,8 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	position: absolute;
 	right: 11%;
 	top: 7vh;
-	display: none;
+	opacity: 0;
+	transition: opacity 1s;
 }
 #body {
 	top: 30vh;
@@ -119,7 +120,15 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	vertical-align: middle;
 	line-height: 15vmin;
 }
-
+#pokeCorrect {
+	opacity: 0;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 40%;
+	width: 20%;
+	transition: opacity 1s;
+}
 /* 
 HELPER CLASSES
 
@@ -135,10 +144,10 @@ CLASES QUE SE INCRUSTAN A LOS ELEMENTOS SEGUN NECESIDAD
 	color: red;
 }
 .visible {
-	display: initial !important;
+	opacity: 1 !important;
 }
 .hidden {
-	display: none !important;
+	opacity: 0 !important;
 }
 .end-question {
 	margin: auto;
