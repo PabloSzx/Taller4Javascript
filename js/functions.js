@@ -36,7 +36,9 @@ function setValue(clase, argument) {
 function textChoose(id) {
 	document.getElementById('forms').elements[id].checked = true;
 } 
-
+function playWhoIs(){
+	document.getElementById('whois').play();
+}
 function hover() {
 	setImage('imgPokemon',imgSrc+name+png);
 }

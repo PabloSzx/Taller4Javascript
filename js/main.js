@@ -17,6 +17,7 @@ function main() {
 	button();
 }
 function button() {
+	playWhoIs();
 	if (p < 16) {
 	while (true) {
 		const n = (Math.round(Math.random()*(testPokemon.length-1)));

@@ -93,7 +93,7 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	display: flex;
 	align-items: center;
 	position: relative;
-	top: 10vh;
+	top: 10vmin;
 	left: 10vw;
 	
 	background-color: #fbbf42;
@@ -106,7 +106,7 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 }
 #alternatives {
 	position: relative;
-	top: 7.1vh;
+	top: 7.1vmin;
 	left: 10vw;
 	background-color: #2F4698;
 	width: 77vw;
