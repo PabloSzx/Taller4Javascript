@@ -95,20 +95,23 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	position: relative;
 	top: 10vh;
 	left: 10vw;
-	background-image: url("/imgs/who.png");
+	
+	background-color: #fbbf42;
 	width: 77vw;
 	height: 13vh;
 	vertical-align: middle;
 	color: #2f2f2f;
 	font-size: 6vmin;
+	text-shadow: 1px 1px #2f2f2f;
 }
 #alternatives {
 	position: relative;
-	top: 10vh;
+	top: 7vh;
 	left: 10vw;
-	background-color: #fbbf42;
+	background-color: #2F4698;
 	width: 77vw;
 	height: 32vh;
+	color: white;
 }
 #finalScore {
 	text-align: center;
