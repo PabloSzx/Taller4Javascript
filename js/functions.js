@@ -21,6 +21,10 @@ function setText(clase, argument) {
 	document.getElementById(clase).innerHTML = argument;
 }
 
+function addText(clase, argument, between) {
+	document.getElementById(clase).innerHTML = document.getElementById(clase).innerHTML + between + argument;
+}
+
 function setImage(clase, argument) {
 	document.getElementById(clase).src = argument;
 }
@@ -32,3 +36,10 @@ function setValue(clase, argument) {
 function textChoose(id) {
 	document.getElementById('forms').elements[id].checked = true;
 } 
+
+function hover() {
+	setImage('imgPokemon',imgSrc+name+png);
+}
+function hoverout() {
+	setImage('imgPokemon',imgSrc+name+guess+png);
+}

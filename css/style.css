@@ -32,6 +32,8 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	font-size: 20px;
 }
 #imgPokemon {
+	position: relative;
+	left: 1vw;
 	height: 100%;
 	padding-right: 2vw;
 }
@@ -44,8 +46,9 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 #forms {
 	position: relative;
 	top: 10%;
+	left: 2vw;
 	height: 100% !important;
-	font-size: 3vh;
+	font-size: 3.5vh;
 }
 
 #forms, input {
@@ -63,9 +66,17 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 
 #logo {
 	position: relative;
-	top: 5vh;
+	top: 3vh;
 	left: 5vw;
-	height: 20vh;
+	width: 60vmin;
+}
+
+#restart {
+	height: 50%;
+	position: absolute;
+	right: 11%;
+	top: 7vh;
+	display: none;
 }
 #body {
 	top: 30vh;
@@ -85,7 +96,7 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	height: 13vh;
 	vertical-align: middle;
 	color: #2f2f2f;
-	font-size: 8vh;
+	font-size: 6vmin;
 }
 #alternatives {
 	position: relative;
@@ -95,6 +106,12 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	width: 77vw;
 	height: 32vh;
 }
+#finalScore {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 15vmin;
+}
+
 /* 
 HELPER CLASSES
 
@@ -108,4 +125,13 @@ CLASES QUE SE INCRUSTAN A LOS ELEMENTOS SEGUN NECESIDAD
 }
 .red-text {
 	color: red;
+}
+.visible {
+	display: initial !important;
+}
+.hidden {
+	display: none !important;
+}
+.end-question {
+	margin: auto;
 }

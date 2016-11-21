@@ -49,10 +49,13 @@ function button() {
 	}
 	}
 	updateScore();
-	if (p<16) {
+	if (p<=16) {
 		p=p+1;
 	}
 	document.getElementById('forms').reset();
+		if (p===17) {
+			final();
+		}
 	
 }
 function updateScore() {
@@ -79,12 +82,31 @@ function printScore() {
 	checkAnswer();
 	console.log(finalScore)
 }
-function hover() {
-	setImage('imgPokemon',imgSrc+name+png);
+
+function final() {
+	addClass('restart','visible');
+	setClass('forms','hidden');
+	setClass('imgPokemon','hidden');
+	setText('question','Juego Terminado');
+	setClass('question','end-question');
+	setClass('arrow','hidden');
+	checkAnswer();
+	let good = 0, bad = 0;
+	for (let i = 0; i < finalScore.length; i++) {
+		if (finalScore[i] === 1) {
+			good++;
+		}
+		else {
+			bad++;
+		}
+	}
+	setText('finalScore','Has acertado '+(good)+' pokémon');
+	addText('finalScore','Te has equivocado '+bad+' veces',br);
+
+	p++;
 }
-function hoverout() {
-	setImage('imgPokemon',imgSrc+name+guess+png);
-}
+
+
 
 
 /*
