@@ -134,20 +134,14 @@ HELPER CLASSES
 
 CLASES QUE SE INCRUSTAN A LOS ELEMENTOS SEGUN NECESIDAD
 */
-.background-black {
-	background-color: black;
-}
-.background-blue {
-	background-color: blue;
-}
-.red-text {
-	color: red;
-}
 .visible {
 	opacity: 1 !important;
 }
 .hidden {
 	opacity: 0 !important;
+}
+.displayNone {
+	display: none !important;
 }
 .end-question {
 	margin: auto;

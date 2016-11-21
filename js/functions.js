@@ -29,19 +29,9 @@ function setImage(clase, argument) {
 	document.getElementById(clase).src = argument;
 }
 
-function setValue(clase, argument) {
-	document.getElementById(clase).value = argument;
-}
-
 function textChoose(id) {
 	document.getElementById('forms').elements[id].checked = true;
 } 
 function playWhoIs(){
 	document.getElementById('whois').play();
-}
-function hover() {
-	setImage('imgPokemon',imgSrc+name+png);
-}
-function hoverout() {
-	setImage('imgPokemon',imgSrc+name+guess+png);
 }
