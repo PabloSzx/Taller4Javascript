@@ -28,3 +28,7 @@ function setImage(clase, argument) {
 function setValue(clase, argument) {
 	document.getElementById(clase).value = argument;
 }
+
+function textChoose(id) {
+	document.getElementById('forms').elements[id].checked = true;
+} 

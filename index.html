@@ -16,15 +16,25 @@
 </head>
 <body onload="main()">
 	<div id="header">
-		<img src="/imgs/pokemonlogo.png" id="logo">
+		<a href="./"><img src="/imgs/pokemonlogo.png" id="logo"></a>
+		
 	</div>
 	<div id="body">
+	
 		<div id="title">
 		<img id="imgPokemon" onmouseover="hover()" onmouseout="hoverout()">
 			¿Cuál es este pokémon?
+		<img id="arrow" src='/imgs/arrow.png' onClick='button()'/>
 		</div>
 		<div id="alternatives">
 			
+		<form id="forms" method="post">
+		  <input type="radio" id="a" name="selection" value="opcion a"><span id="opt0" onclick="textChoose('0')">A</span><br>
+		  <input type="radio" id="b" name="selection" value="opcion b"><span id="opt1" onclick="textChoose('1')">B</span><br>
+		  <input type="radio" id="c" name="selection" value="opcion c"><span id="opt2" onclick="textChoose('2')">C</span><br>
+		  <input type="radio" id="d" name="selection" value="opcion d"><span id="opt3" onclick="textChoose('3')">D</span><br>
+		  <input type="radio" id="e" name="selection" value="opcion e"><span id="opt4" onclick="textChoose('4')">E</span><br>
+		</form>
 		</div>
 	</div>
 </body>

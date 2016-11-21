@@ -31,15 +31,25 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	color: white;
 	font-size: 20px;
 }
-#button {
-	display: block;
-	margin: auto;
-}
 #imgPokemon {
 	height: 100%;
+	padding-right: 2vw;
 }
-#form {
-	
+#arrow {
+	position: absolute;
+	top: 15%;
+	right: 5%;
+	height: 70%;
+}
+#forms {
+	position: relative;
+	top: 10%;
+	height: 100% !important;
+	font-size: 3vh;
+}
+
+#forms, input {
+	height: 3vh;
 }
 
 #header {
@@ -70,11 +80,11 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	position: relative;
 	top: 10vh;
 	left: 10vw;
-	background-color: #324994;
+	background-image: url("/imgs/who.png");
 	width: 77vw;
 	height: 13vh;
 	vertical-align: middle;
-	color: white;
+	color: #2f2f2f;
 	font-size: 8vh;
 }
 #alternatives {
