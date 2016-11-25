@@ -18,8 +18,6 @@ FUNCIONES QUE SE REALIZARAN AL TRANSCURRIR LOS DISTINTOS EVENTOS
 function main() {
 	//Esta funcion se realizara al momento que la pagina completa haya cargado
 	button();
-	setImage('logo',imgSrc+'pokemonlogo.gif');
-	setClass('logo','');
 }
 function button() {
 	if (p < 16) {
@@ -123,12 +121,10 @@ function showAnswer() {
 	setTimeout(function(){ button(); setImage('pokeCorrect',''); }, 2500)
 }
 
-function showIntro() {
-	setImage('logo',imgSrc+'intro.gif');
-	setClass('logo','maxHeight');
+function showRestart() {
+	setClass('restart','visible');
 }
 
-function hideIntro() {
-	setImage('logo',imgSrc+'pokemonlogo.gif');
-	setClass('logo','');
+function hideRestart() {
+	setClass('restart','hidden');
 }
