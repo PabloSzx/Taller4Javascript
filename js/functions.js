@@ -35,3 +35,11 @@ function textChoose(id) {
 function playWhoIs(){
 	document.getElementById('whois').play();
 }
+
+function showRestart() {
+	setClass('restart','visible');
+}
+
+function hideRestart() {
+	setClass('restart','hidden');
+}

@@ -19,7 +19,7 @@ function main() {
 	//Esta funcion se realizara al momento que la pagina completa haya cargado
 	button();
 }
-function button() {
+function button() {	//n es para testpokemon
 	if (p < 16) {
 	playWhoIs();
 	while (true) {
@@ -31,7 +31,7 @@ function button() {
 			break;
 		}
 	}	
-	let m;
+	let m; //es para poolpokemon
 	mAlreadyPicked = [];
 	const correctAnswer = Math.round(Math.random()*4);
 	for (let i = 0; i < 5; i++) {
@@ -56,7 +56,7 @@ function button() {
 	if (p<=16) {
 		p=p+1;
 	}
-	document.getElementById('forms').reset();
+	document.getElementById('forms').reset(); //resetea el forms para que se destickee
 		if (p===17) {
 			final();
 		}
@@ -68,7 +68,7 @@ function updateScore() {
 				}
 		}
 }
-function checkAnswer() {
+function checkAnswer() { //para revisar si esta correcto (modifica pokebolas y conteo final)
 	if (p > 0) {
 		for (let i = 0; i < p; i++) {
 			imgId=('s'+(i));
@@ -90,7 +90,7 @@ function checkAnswer() {
 	}
 
 function final() {
-	addClass('restart','visible');
+	addClass('restart','visible'); //hace aparecer y desaparecer lo primero
 	setClass('forms','hidden');
 	setClass('imgPokemon','displayNone');
 	setText('question','Juego Terminado');
@@ -106,10 +106,16 @@ function final() {
 			bad++;
 		}
 	}
-	setText('finalScore','Has acertado '+(good)+' pokémon');
-	addText('finalScore','Te has equivocado '+bad+' veces',br);
-
-	//p++;
+	setText('finalScore','Has acertado '+good+' pokémon');
+	if (bad === 1) {
+		addText('finalScore','Te has equivocado '+bad+' vez',br);
+	} 
+	else if (bad === 0) {
+		addText('finalScore','No te has equivocado, felicitaciones, ¡Eres un verdadero maestro Pokémon!',br);
+	}
+	else {
+		addText('finalScore','Te has equivocado '+bad+' veces',br);
+	}
 }
 
 function showAnswer() {
@@ -121,10 +127,4 @@ function showAnswer() {
 	setTimeout(function(){ button(); setImage('pokeCorrect',''); }, 2500)
 }
 
-function showRestart() {
-	setClass('restart','visible');
-}
 
-function hideRestart() {
-	setClass('restart','hidden');
-}
