@@ -115,3 +115,13 @@ function showAnswer() {
 	
 	setTimeout(function(){ button(); setImage('pokeCorrect',''); }, 2000)
 }
+
+function showIntro() {
+	setImage('logo',imgSrc+'intro.gif');
+	setClass('logo','maxHeight');
+}
+
+function hideIntro() {
+	setImage('logo',imgSrc+'pokemonlogo.gif');
+	setClass('logo','');
+}
