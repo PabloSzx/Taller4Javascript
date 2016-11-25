@@ -72,13 +72,18 @@ function checkAnswer() {
 	if (p > 0) {
 		for (let i = 0; i < p; i++) {
 			imgId=('s'+(i));
-			if (score[i][0] === score[i][1]) {
-				finalScore[i] = 1;
-				setImage(imgId,correct);
+			try{
+				if (score[i][0] === score[i][1]) {
+					finalScore[i] = 1;
+					setImage(imgId,correct);
+				}
+				else {
+					finalScore[i] = 0;
+					setImage(imgId,wrong);
+				}
 			}
-			else {
-				finalScore[i] = 0;
-				setImage(imgId,wrong);
+			catch (err) {
+				//Este catch esta diseñado para cuando no existe el score[i][1] y no se salga del script
 			}
 			}
 		}
@@ -104,7 +109,7 @@ function final() {
 	setText('finalScore','Has acertado '+(good)+' pokémon');
 	addText('finalScore','Te has equivocado '+bad+' veces',br);
 
-	p++;
+	//p++;
 }
 
 function showAnswer() {
