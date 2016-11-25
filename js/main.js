@@ -18,6 +18,7 @@ FUNCIONES QUE SE REALIZARAN AL TRANSCURRIR LOS DISTINTOS EVENTOS
 function main() {
 	//Esta funcion se realizara al momento que la pagina completa haya cargado
 	button();
+	setImage('logo',imgSrc+'pokemonlogo.gif');
 }
 function button() {
 	if (p < 16) {
