@@ -52,6 +52,7 @@ function button() {
 	}
 	}
 	updateScore();
+	checkAnswer();
 	if (p<=16) {
 		p=p+1;
 	}
@@ -68,14 +69,17 @@ function updateScore() {
 		}
 }
 function checkAnswer() {
-	if (p > 1) {
-		for (let i = 0; i < p-1; i++) {
-				if (score[i][0] === score[i][1]) {
-					finalScore[i] = 1;
-				}
-				else {
-					finalScore[i] = 0;
-				}
+	if (p > 0) {
+		for (let i = 0; i < p; i++) {
+			imgId=('s'+(i));
+			if (score[i][0] === score[i][1]) {
+				finalScore[i] = 1;
+				setImage(imgId,correct);
+			}
+			else {
+				finalScore[i] = 0;
+				setImage(imgId,wrong);
+			}
 			}
 		}
 	}

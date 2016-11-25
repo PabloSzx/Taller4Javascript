@@ -34,7 +34,7 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 #imgPokemon {
 	position: relative;
 	left: 1vw;
-	height: 100%;
+	width: 7vw;
 	padding-right: 2vw;
 }
 #arrow {
@@ -128,6 +128,14 @@ ATRIBUTOS ASOCIADOS A LAS DISTINTOS ELEMENTOS DEL DOM HTML
 	left: 40%;
 	width: 20%;
 	transition: opacity 0.2s;
+}
+#scoreboard {
+	width: 40vw;
+	margin: auto;
+	position: relative;
+	top: 10vh;
+	align-content: center;
+	
 }
 /* 
 HELPER CLASSES
