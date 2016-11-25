@@ -111,9 +111,9 @@ function showAnswer() {
 	setImage('pokeCorrect',imgSrc+name+png);
 	
 	setTimeout(function(){ setClass('pokeCorrect','visible');}, 300)
-	setTimeout(function(){ setClass('pokeCorrect','hidden');}, 1500)	
+	setTimeout(function(){ setClass('pokeCorrect','hidden');}, 2000)	
 	
-	setTimeout(function(){ button(); setImage('pokeCorrect',''); }, 2000)
+	setTimeout(function(){ button(); setImage('pokeCorrect',''); }, 2500)
 }
 
 function showIntro() {
