@@ -40,3 +40,5 @@ const wrong = imgSrc+"cross.png"
 const br = "<br>"
 
 const guess = "-guess"
+
+let show,hide,clear;

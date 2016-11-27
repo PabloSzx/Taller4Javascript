@@ -29,11 +29,25 @@ function setImage(clase, argument) {
 	document.getElementById(clase).src = argument;
 }
 
+function setMouseOut(clase, argument) {
+	document.getElementById(clase).onmouseout = argument;
+}
+
 function textChoose(id) {
 	document.getElementById('forms').elements[id].checked = true;
 } 
-function playWhoIs(){
+function playWhoIs() {
 	document.getElementById('whois').play();
+}
+
+function stopWhoIs() {
+	document.getElementById('whois').load();
+}
+
+function clearDelay() {
+	clearTimeout(show);
+	clearTimeout(hide);
+	clearTimeout(clear);
 }
 
 function showRestart() {
