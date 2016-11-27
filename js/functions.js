@@ -61,3 +61,17 @@ function showRestart() {
 function hideRestart() {
 	setClass('restart','hidden');
 }
+
+function preloadImage(url)
+{
+    var img=new Image();
+    img.src=imgSrc+url;
+    console.log(imgSrc+url);
+}
+
+function preloadImages() {
+	for (let i = testPokemon.length - 1; i >= 0; i--) {
+		preloadImage(testPokemon[i]+png);
+		preloadImage(testPokemon[i]+guess+png);
+	}
+}
