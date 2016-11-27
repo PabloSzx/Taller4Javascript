@@ -33,6 +33,10 @@ function setMouseOut(clase, argument) {
 	document.getElementById(clase).onmouseout = argument;
 }
 
+function setMouseOver(clase, argument) {
+	document.getElementById(clase).onmouseover = argument;
+}
+
 function textChoose(id) {
 	document.getElementById('forms').elements[id].checked = true;
 } 

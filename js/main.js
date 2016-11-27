@@ -90,9 +90,10 @@ function checkAnswer() { //para revisar si esta correcto (modifica pokebolas y c
 	}
 
 function final() { //hace aparecer y desaparecer lo primero
-	addClass('restart','visible'); 
-	setMouseOut('restart','showRestart()');
-	setClass('forms','hidden');
+	setClass('restart','visible'); 
+	setMouseOut('restart','');
+	setMouseOver('restart','');
+	setClass('forms','visibilityHidden');
 	setClass('imgPokemon','displayNone');
 	setText('question','Juego Terminado');
 	setClass('question','end-question');
@@ -121,13 +122,22 @@ function final() { //hace aparecer y desaparecer lo primero
 
 function showAnswer() {
 	setImage('pokeCorrect',imgSrc+name+png);
-
+	addClass('forms','hidden');
 	clearDelay();
 	
-	show = setTimeout(function(){ setClass('pokeCorrect','visible');}, 300)
-	hide = setTimeout(function(){ setClass('pokeCorrect','hidden'); stopWhoIs();}, 2000)	
-	
-	clear = setTimeout(function(){ button(); setImage('pokeCorrect',''); }, 2500)
+	show = setTimeout(function(){ setClass('forms','visibilityHidden'); setClass('pokeCorrect','visible');}, 300);
+	hide = setTimeout(function(){ setClass('imgPokemon','hidden'); setClass('pokeCorrect','hidden'); stopWhoIs();}, 2000);
+	clear = setTimeout(
+		function(){ 
+			button(); 
+			if (p !== 17) { 
+			setClass('forms','visible');
+			setClass('imgPokemon','visible'); 
+			}
+			setImage('pokeCorrect',''); 
+		}, 2400)
+
+
 }
 
 
