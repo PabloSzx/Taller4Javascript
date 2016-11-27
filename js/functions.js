@@ -66,7 +66,6 @@ function preloadImage(url)
 {
     var img=new Image();
     img.src=imgSrc+url;
-    console.log(imgSrc+url);
 }
 
 function preloadImages() {
